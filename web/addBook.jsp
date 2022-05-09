@@ -152,12 +152,6 @@
 										<input type="text" name="genre" placeholder="Enter genre" class="input-xlarge" required>
 									</div>
 								</div>	
-                                                                <div class="control-group">
-									<label class="control-label">Book Cover</label>
-									<div class="controls">
-										<input type="file" name="image" class="input-xlarge" required>
-									</div>
-								</div>	
                                                                 <div class="actions"><input tabindex="9" class="btn btn-inverse large" type="submit" value="Insert new book"></div>
 								<br>
 							</fieldset>

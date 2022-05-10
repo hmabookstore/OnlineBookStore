@@ -321,7 +321,6 @@
 						<ul class="nav">
 							<li><a href="userHome1.jsp">Home Page</a></li>  
 							<li><a href="./about.html">About Us</a></li>
-							<li><a href="contact1.jsp">Contact Us</a></li>
 							<li><a href="userlogout">Logout</a></li>							
 						</ul>					
 					</div>

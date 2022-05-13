@@ -35,6 +35,16 @@ public class newsletter1 extends HttpServlet {
             String uname_var=session.getAttribute("user").toString();
             MyDb db=new MyDb();
             Connection con=db.getCon();
+            PreparedStatement pscheck=con.prepareStatement("select users.email from users,subscribers where users.username=?;");
+            pscheck.setString(1,uname_var);
+            ResultSet rscheck=pscheck.executeQuery();
+            if(rscheck.next())
+            {
+                out.println("<script type=\"text/javascript\">");
+                out.println("alert('Already subscribed!');");
+                out.println("location='userHome1.jsp';");
+                out.println("</script>");
+            }
             PreparedStatement ps0=con.prepareStatement("select email,name from users where username=?");
             ps0.setString(1,uname_var);
             ResultSet rs0=ps0.executeQuery();

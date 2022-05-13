@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -26,6 +27,26 @@ public class registerCheck extends HttpServlet {
             String pswd=request.getParameter("pass");
             MyDb db=new MyDb();
             Connection con=db.getCon();
+            PreparedStatement ps0=con.prepareStatement("select username,phoneno,email from users where username=? or phoneno=? or email=?;");
+            ps0.setString(1,uname);
+            ps0.setString(2,phone);
+            ps0.setString(3,mail);
+            ResultSet rs0=ps0.executeQuery();
+            if(rs0.next())
+            {
+                out.println("<script type=\"text/javascript\">");
+                String username=rs0.getString(1);
+                String phoneno=rs0.getString(2);
+                String email=rs0.getString(3);
+                if(username.equalsIgnoreCase(uname))
+                    out.println("alert('Username already registered!');");
+                else if(phone.equalsIgnoreCase(phoneno))
+                    out.println("alert('Phone no. already registered!');");
+                else if(mail.equalsIgnoreCase(email))
+                    out.println("alert('E-mail ID already registered!');");
+                out.println("location='register1.jsp';");
+                out.println("</script>");
+            }
             PreparedStatement ps=con.prepareStatement("insert into users values(?,?,?,?,?,password(?));");
             ps.setString(1,uname);
             ps.setString(2,name_var);

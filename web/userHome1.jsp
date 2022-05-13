@@ -145,7 +145,7 @@
 				</div>			
 			</section>
 			<section class="header_text">
-				Hello, <strong>${name}</strong>
+                            Hello, <strong><a href="userProfile.jsp">${name}</a></strong>
 				<br/>Don't miss out our weekly offers.
 			</section>
 			<section class="main-content">

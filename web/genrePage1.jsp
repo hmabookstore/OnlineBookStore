@@ -153,7 +153,7 @@
                                                                             total_slides++;
                                                                         int n=1;
                                                                     %>
-                                                                    <span class="pull-left"><span class="text">Genre Page<strong> (<%=total_books%> Books)</strong></span></span>
+                                                                    <span class="pull-left"><span class="text"><%=genre_var%><strong> (<%=total_books%> Books)</strong></span></span>
 									<span class="pull-right">
 										<a class="left button" href="#myCarousel-1" data-slide="prev"></a><a class="right button" href="#myCarousel-1" data-slide="next"></a>
 									</span>

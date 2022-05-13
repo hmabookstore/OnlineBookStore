@@ -145,7 +145,7 @@
 				</div>			
 			</section>
 			<section class="header_text">
-				Hello, ${name} 
+				Hello, <strong>${name}</strong>
 				<br/>Don't miss out our weekly offers.
 			</section>
 			<section class="main-content">

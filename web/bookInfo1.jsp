@@ -317,7 +317,7 @@
 						</div>
 						<div class="block">
 							<h4 class="title">
-								<span class="pull-left"><span class="text">Randomize</span></span>
+								<span class="pull-left"><span class="text">Explore More Books</span></span>
 								<span class="pull-right">
 									<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
 								</span>

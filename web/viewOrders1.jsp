@@ -316,14 +316,14 @@
 						<ul class="nav">
 							<li><a href="userHome1.jsp">Home Page</a></li>  
 							<li><a href="./about.html">About Us</a></li>
-							<li><a href="userlogout">Logout</a></li>							
+							<li><a href="userLogout">Logout</a></li>							
 						</ul>					
 					</div>
 					<div class="span4">
 						<h4>My Account</h4>
 						<ul class="nav">
 							<li><a href="recommendPage1.jsp">View Recommendations</a></li>
-							<li><a href="viewOrders1.jsp">Order History</a></li>
+							<li><a href="cartPage1.jsp">View Cart</a></li>
 							<li><a href="wishlistPage.jsp">Wish List</a></li>
 							<li><a href="newsletter1">Newsletter</a></li>
 						</ul>

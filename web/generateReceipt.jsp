@@ -97,9 +97,9 @@
         </div>
         <table>
         <tr>
-            <th>Book ID</th>
+            
             <th>Book Name</th>
-            <th>Book Price</th>
+            <th>Price</th>
             <th>Quantity</th>
             <th>Discount</th>
             <th>Final Value</th>
@@ -109,7 +109,7 @@
             //{
         %>
         <tr>
-            <td><%=bookid_var%></td>     
+                
             <td><%=bookname_var%></td> 
             <td><%=price_var%></td> 
             <td><%=quantity_var%></td> 
@@ -117,7 +117,6 @@
             <td><%=finalprice_var%></td>
         </tr>
         <tr>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>

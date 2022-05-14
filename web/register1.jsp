@@ -123,7 +123,7 @@
 								<div class="control-group">
 									<label class="control-label">Email address</label>
 									<div class="controls">
-										<input type="text" name="email" placeholder="Enter your email" class="input-xlarge" required>
+										<input type="email" name="email" placeholder="Enter your email" class="input-xlarge" required>
 									</div>
 								</div>
 								<div class="control-group">
